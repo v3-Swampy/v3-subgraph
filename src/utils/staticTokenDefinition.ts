@@ -20,10 +20,11 @@ export class StaticTokenDefinition {
 
   // Get all tokens with a static defintion
   static getStaticDefinitions(): Array<StaticTokenDefinition> {
-    let staticDefinitions = new Array<StaticTokenDefinition>(6)
-
+    let staticDefinitions = new Array<StaticTokenDefinition>(0)
+    
+    // Swampy UPDATE
     // Add DGD
-    let tokenDGD = new StaticTokenDefinition(
+    /* let tokenDGD = new StaticTokenDefinition(
       Address.fromString('0xe0b7927c4af23765cb51314a0e0521a9645f0e2a'),
       'DGD',
       'DGD',
@@ -74,7 +75,7 @@ export class StaticTokenDefinition {
       'HPBCoin',
       BigInt.fromI32(18)
     )
-    staticDefinitions.push(tokenHPB)
+    staticDefinitions.push(tokenHPB) */
 
     return staticDefinitions
   }
