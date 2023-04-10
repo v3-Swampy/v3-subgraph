@@ -3,9 +3,9 @@ description: Uniswap is a decentralized protocol for automated token exchange on
 repository: https://github.com/Uniswap/uniswap-v3-subgraph
 schema:
   file: ./schema.graphql
-graft: # what's this?
-  base: QmPrb5mvZj3ycUugZgwLWCvK93jfXfhvfjRXrFk4tRmyCX
-  block: 14292820
+# graft:
+#   base: QmPrb5mvZj3ycUugZgwLWCvK93jfXfhvfjRXrFk4tRmyCX
+#   block: 14292820
 features:
   - nonFatalErrors
 dataSources:
