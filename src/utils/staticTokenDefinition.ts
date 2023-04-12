@@ -20,7 +20,7 @@ export class StaticTokenDefinition {
 
   // Get all tokens with a static defintion
   static getStaticDefinitions(): Array<StaticTokenDefinition> {
-    let staticDefinitions = new Array<StaticTokenDefinition>(0)
+    let staticDefinitions = new Array<StaticTokenDefinition>(2)
     
     // Swampy UPDATE
     // Add DGD
@@ -76,6 +76,22 @@ export class StaticTokenDefinition {
       BigInt.fromI32(18)
     )
     staticDefinitions.push(tokenHPB) */
+
+    let tokenUSDT = new StaticTokenDefinition(
+        Address.fromString('0x7d682e65efc5c13bf4e394b8f376c48e6bae0355'),
+        'USDT',
+        'USDT',
+        BigInt.fromI32(18)
+    )
+    staticDefinitions.push(tokenUSDT)
+
+    let tokenWCFX = new StaticTokenDefinition(
+        Address.fromString('0x2ed3dddae5b2f321af0806181fbfa6d049be47d8'),
+        'WCFX',
+        'WCFX',
+        BigInt.fromI32(18)
+    )
+    staticDefinitions.push(tokenWCFX)
 
     return staticDefinitions
   }
