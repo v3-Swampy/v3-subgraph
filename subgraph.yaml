@@ -13,9 +13,9 @@ dataSources:
     name: Factory
     network: testnet
     source:
-      address: '0xa5fa1005c10bbe414f4a9d56987e2c0ed0d48eea'
+      address: '0x8f6858da6116cca95602d633aecc1f434f38bdb1'
       abi: Factory
-      startBlock: 118351960
+      startBlock: 118886510
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.4
@@ -42,9 +42,9 @@ dataSources:
     name: NonfungiblePositionManager
     network: testnet
     source:
-      address: '0x8ae50674593fff83a2967325fdaea6b34b456cc1'
+      address: '0xa6822774704f981f7c455ed22e369167676c8a98'
       abi: NonfungiblePositionManager
-      startBlock: 118351960
+      startBlock: 118886510
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.4
