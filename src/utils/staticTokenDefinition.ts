@@ -20,7 +20,7 @@ export class StaticTokenDefinition {
 
   // Get all tokens with a static defintion
   static getStaticDefinitions(): Array<StaticTokenDefinition> {
-    let staticDefinitions = new Array<StaticTokenDefinition>(2)
+    let staticDefinitions = new Array<StaticTokenDefinition>(6)
     
     // Swampy UPDATE
     // Add DGD
@@ -92,6 +92,38 @@ export class StaticTokenDefinition {
         BigInt.fromI32(18)
     )
     staticDefinitions.push(tokenWCFX)
+
+    let tokenPPI = new StaticTokenDefinition(
+        Address.fromString('0x49916ba65d0048c4bbb0a786a527d98d10a1cd2d'),
+        'PPI',
+        'PPI',
+        BigInt.fromI32(18)
+    )
+    staticDefinitions.push(tokenPPI)
+
+    let tokenETH = new StaticTokenDefinition(
+        Address.fromString('0xcd71270f82f319e0498ff98af8269c3f0d547c65'),
+        'ETH',
+        'ETH',
+        BigInt.fromI32(18)
+    )
+    staticDefinitions.push(tokenETH)
+
+    let tokenBTC = new StaticTokenDefinition(
+        Address.fromString('0x54593e02c39aeff52b166bd036797d2b1478de8d'),
+        'BTC',
+        'BTC',
+        BigInt.fromI32(18)
+    )
+    staticDefinitions.push(tokenBTC)
+
+    let tokenVST = new StaticTokenDefinition(
+        Address.fromString('0xb0a519beb026590c191356b68b264131402a333f'),
+        'VST',
+        'VST',
+        BigInt.fromI32(18)
+    )
+    staticDefinitions.push(tokenVST)
 
     return staticDefinitions
   }
