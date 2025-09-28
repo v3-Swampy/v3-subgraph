@@ -4,14 +4,14 @@ import { Bundle, Pool, Token } from './../types/schema'
 import { BigDecimal, BigInt } from '@graphprotocol/graph-ts'
 import { exponentToBigDecimal, safeDiv } from '../utils/index'
 
-const WETH_ADDRESS = '0x2ed3dddae5b2f321af0806181fbfa6d049be47d8'  // TOUPDATE
-const USDC_WETH_03_POOL = '0x5579eB5927FF51c9d790404162c951F0FFFa2D42'  // TOUPDATE
+const WETH_ADDRESS = '0x14b2d3bc65e74dae1030eafd8ac30c533c976a9b'  //
+const USDC_WETH_03_POOL = '0x6806c2808b68b74206A0Cbe00dDe2d0e26216308'  // PoolCFXUSDT3000
 
 // token where amounts should contribute to tracked volume and liquidity
 // usually tokens that many tokens are paired with s
-export let WHITELIST_TOKENS: string[] = [  // TOUPDATE
+export let WHITELIST_TOKENS: string[] = [
   WETH_ADDRESS, // WETH
-  '0x7d682e65efc5c13bf4e394b8f376c48e6bae0355', // eSpace Testnet USDT
+  '0xfe97e85d13abd9c1c33384e796f10b73905637ce', // eSpace USDT
 //   '0x6b175474e89094c44da98b954eedeac495271d0f', // DAI
 //   '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48', // USDC
 //   '0xdac17f958d2ee523a2206206994597c13d831ec7', // USDT
@@ -35,7 +35,7 @@ export let WHITELIST_TOKENS: string[] = [  // TOUPDATE
 ]
 
 let STABLE_COINS: string[] = [ // TOUPDATE
-'0x7d682e65efc5c13bf4e394b8f376c48e6bae0355', // eSpace Testnet USDT
+'0xfe97e85d13abd9c1c33384e796f10b73905637ce', // eSpace USDT
 //   '0x6b175474e89094c44da98b954eedeac495271d0f', // DAI
 //   '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48', // USDC
 //   '0xdac17f958d2ee523a2206206994597c13d831ec7', // USDT
