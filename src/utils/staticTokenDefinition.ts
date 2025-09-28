@@ -78,7 +78,7 @@ export class StaticTokenDefinition {
     staticDefinitions.push(tokenHPB) */
 
     let tokenUSDT = new StaticTokenDefinition(
-        Address.fromString('0x7d682e65efc5c13bf4e394b8f376c48e6bae0355'),
+        Address.fromString('0xfe97e85d13abd9c1c33384e796f10b73905637ce'),
         'USDT',
         'USDT',
         BigInt.fromI32(18)
@@ -86,23 +86,15 @@ export class StaticTokenDefinition {
     staticDefinitions.push(tokenUSDT)
 
     let tokenWCFX = new StaticTokenDefinition(
-        Address.fromString('0x2ed3dddae5b2f321af0806181fbfa6d049be47d8'),
+        Address.fromString('0x14b2d3bc65e74dae1030eafd8ac30c533c976a9b'),
         'WCFX',
         'WCFX',
         BigInt.fromI32(18)
     )
     staticDefinitions.push(tokenWCFX)
 
-    let tokenPPI = new StaticTokenDefinition(
-        Address.fromString('0x49916ba65d0048c4bbb0a786a527d98d10a1cd2d'),
-        'PPI',
-        'PPI',
-        BigInt.fromI32(18)
-    )
-    staticDefinitions.push(tokenPPI)
-
     let tokenETH = new StaticTokenDefinition(
-        Address.fromString('0xcd71270f82f319e0498ff98af8269c3f0d547c65'),
+        Address.fromString('0xa47f43de2f9623acb395ca4905746496d2014d57'),
         'ETH',
         'ETH',
         BigInt.fromI32(18)
@@ -110,20 +102,20 @@ export class StaticTokenDefinition {
     staticDefinitions.push(tokenETH)
 
     let tokenBTC = new StaticTokenDefinition(
-        Address.fromString('0x54593e02c39aeff52b166bd036797d2b1478de8d'),
+        Address.fromString('0x1f545487c62e5acfea45dcadd9c627361d1616d8'),
         'BTC',
         'BTC',
         BigInt.fromI32(18)
     )
     staticDefinitions.push(tokenBTC)
 
-    let tokenVST = new StaticTokenDefinition(
-        Address.fromString('0xb0a519beb026590c191356b68b264131402a333f'),
-        'VST',
-        'VST',
-        BigInt.fromI32(18)
-    )
-    staticDefinitions.push(tokenVST)
+    // let tokenVST = new StaticTokenDefinition(
+    //     Address.fromString('0xb0a519beb026590c191356b68b264131402a333f'),
+    //     'VST',
+    //     'VST',
+    //     BigInt.fromI32(18)
+    // )
+    // staticDefinitions.push(tokenVST)
 
     return staticDefinitions
   }
