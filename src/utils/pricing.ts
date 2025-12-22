@@ -37,12 +37,22 @@ export function sqrtPriceX96ToTokenPrices(sqrtPriceX96: BigInt, token0: Token, t
 
 export function getEthPriceInUSD(): BigDecimal {
   // fetch eth prices for each stablecoin
-  let usdcPool = Pool.load(USDC_WETH_03_POOL) // dai is token0
-  if (usdcPool !== null) {
-    return usdcPool.token0Price
-  } else {
+  let usdcPool = Pool.load(USDC_WETH_03_POOL)
+  if (usdcPool === null) {
     return ZERO_BD
   }
+
+  // Uniswap V3 pools sort token0/token1 by address.
+  // We want USD (stable) per 1 ETH (WETH).
+  if (usdcPool.token0 == WETH_ADDRESS) {
+    // token1 per token0 = stable per WETH
+    return usdcPool.token1Price
+  }
+  if (usdcPool.token1 == WETH_ADDRESS) {
+    // token0 per token1 = stable per WETH
+    return usdcPool.token0Price
+  }
+  return ZERO_BD
 }
 
 /**
